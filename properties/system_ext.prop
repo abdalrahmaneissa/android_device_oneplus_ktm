@@ -1,0 +1,23 @@
+# Copyright (C) 2024-2026 The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+# system_ext partition properties for OnePlus Ace 6 (ktm).
+#
+
+# Horae (system-level performance/thermal daemon)
+# Confirmed present: system_ext/bin/horae + system_ext/etc/horae/horae.conf
+persist.sys.horae.enable=1
+
+# IMS / VoLTE / VoWiFi
+# Force-enable IMS capability flags for CN region (OP6113L1/PLQ110).
+# These are needed because the stock ROM ships with vendor-level IMS
+# provisioning that LineageOS does not replicate.
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+
+# IMS RTP QXDM logging level (0=off in user build)
+persist.vendor.ims.rtp.enableqxdm=0
+
+# IFAA
+sys.oplus.ifaa.model=ONEPLUS-R24851
