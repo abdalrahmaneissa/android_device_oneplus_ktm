@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Double tap to wake - hardware supported on this device -->
+    <bool name="config_supportDoubleTapWake">true</bool>
+
+    <!-- Proximity sensor on this device responds quickly (<300ms) -->
+    <bool name="config_proximityCheckOnWake">true</bool>
+    <bool name="config_proximityCheckOnWakeEnabledByDefault">true</bool>
+
+    <!-- Default peak refresh rate - device supports 165Hz -->
+    <integer name="config_defaultPeakRefreshRate">165</integer>
+    <integer name="config_defaultRefreshRate">60</integer>
+
+    <!-- Enable config_dozeAlwaysOnDisplayAvailable as hardware supports AOD -->
+    <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
+
+    <!-- AOD off by default Matches stock OnePlus behavior -->
+    <bool name="config_dozeAlwaysOnEnabled">false</bool>
+
+    <!-- Enable config_sustainedPerformanceModeSupported for better thermal management during long-duration workloads -->
+    <bool name="config_sustainedPerformanceModeSupported">true</bool>
+
+    <!-- 5G SA (Standalone) supported on SM8750 modem -->
+    <bool name="config_telephony5gStandalone">true</bool>
+
+    <!-- 5G NSA (Non-Standalone) supported on SM8750 modem -->
+    <bool name="config_telephony5gNonStandalone">true</bool>
+
+    <!-- WFC over IMS available (carrier-provisioned) -->
+    <bool name="config_carrier_wfc_ims_available">true</bool>
+</resources>
