@@ -1,0 +1,47 @@
+# Copyright (C) 2024-2026 The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+# ODM partition properties for OnePlus Ace 6 (ktm).
+# Source: extracted odm/build.prop from PLQ110_16.0.5.700(CN01)
+#
+
+# Device identification
+ro.oplus.image.odm.type=24851
+ro.build.version.svn=86
+
+# Audio tuning
+# Volume step counts confirmed from odm/build.prop
+ro.config.media_vol_steps=30
+ro.config.vc_call_vol_steps=9
+
+# Display
+# Noise layer suppression: OLED burn-in mitigation specific to this panel
+vendor.display.disable_noise_layer=1
+
+# DRE (Display Reality Engine) status: enabled for vivid mode processing
+vendor.display.global.dre_status=1
+
+# Vivid color mode ID = 102 for this panel variant
+ro.oplus.display.colormode.vivid=102
+
+# Smart Eye Care (blue light filter) v5 supported
+ro.oplus.display.smarteyecare.v5=1
+
+# Physical display dimensions used by display HAL for accurate touch mapping
+ro.oplus.display.screenSizeInches.primary=6.83
+ro.oplus.display.screenSizeCentimeter.primary=17.35
+
+# Dolby Vision DPU processing: hardware-accelerated on SM8750
+ro.vendor.oplus.dolby_vision_dpu=1
+ro.vendor.oplus.dolby_vision_dpu.dvs=1
+ro.vendor.oplus.dolby_vision.multi_cfg=1
+
+# Tone mapping filter: enabled for HDR→SDR conversion
+ro.oplus.tonemap.filter=1
+
+# VPP super resolution (WeChat SR) and version
+ro.oplus.vpp.wechatsr.enable=1
+ro.oplus.vpp.version=V2
+
+# HDR uniform rendering across display partitions
+ro.vendor.oplus.hdr.uniform=1
