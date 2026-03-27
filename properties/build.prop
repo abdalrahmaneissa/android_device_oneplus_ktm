@@ -1,0 +1,9 @@
+# Device info
+ro.product.odm.device=OP6113L1
+ro.product.odm.model=PLQ110
+ro.product.odm.name=PLQ110
+ro.vendor.oplus.regionmark=CN
+
+# NFC
+# CN variant uses specific TMS RF calibration file
+persist.vendor.nfc.configFile_name=libnfc-tms_RF_EC2.conf_24851
