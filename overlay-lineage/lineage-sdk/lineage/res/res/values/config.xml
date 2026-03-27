@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Device has a physical alert slider (tri-state key) -->
+    <bool name="config_hasAlertSlider">true</bool>
+
+    <!-- Alert slider position node -->
+    <string name="config_alertSliderNode">/proc/tri-state-key/position</string>
+
+    <!--
+         Alert slider positions mapped to ringer modes:
+         position 1 RINGER_MODE_SILENT
+         position 2 RINGER_MODE_VIBRATE
+         position 3 RINGER_MODE_NORMAL
+    -->
+    <integer name="config_alertSliderTopPosition">1</integer>
+    <integer name="config_alertSliderMiddlePosition">2</integer>
+    <integer name="config_alertSliderBottomPosition">3</integer>
+
+    <!-- Aspect ratio for 2800x1272 display -->
+    <bool name="config_haveHigherAspectRatioScreen">true</bool>
+
+    <!-- Advanced reboot options -->
+    <string-array name="config_restartActionsList">
+        <item>restart</item>
+        <item>restart_recovery</item>
+        <item>restart_bootloader</item>
+        <item>restart_fastboot</item>
+    </string-array>
+</resources>
