@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+
+
+    <!-- Display: OnePlus Ace 6 - 6.83" Flat LTPO AMOLED -->
+    <!-- 1272 x 2800 px, 450 ppi native, LTPO 1-165Hz -->
+    <!-- Center punch-hole cutout (circular, ~40px radius at native res).
+         Approximated at ~14dp radius at xxhdpi (480dpi bucket).
+         Shape: center-aligned circle, 28dp diameter, top-center. -->
+    <string translatable="false" name="config_mainBuiltInDisplayCutout">
+        M -14,0 a 14,14 0 1,0 28,0 a 14,14 0 1,0 -28,0 Z
+        @left
+    </string>
+
+    <!-- Short-form cutout used by insets calculation -->
+    <string translatable="false" name="config_mainBuiltInDisplayCutoutRectApproximation">
+        M -75,0 H 75 V 98 H -75 Z
+        @left
+    </string>
+
+    <!-- Status bar height 98px native / ~32dp at 480dpi density -->
+    <!-- Matches TARGET_RECOVERY_UI_MARGIN_HEIGHT and OEM status bar -->
+    <dimen name="status_bar_height_default">32.0dp</dimen>
+    <dimen name="status_bar_height_portrait">32.0dp</dimen>
+
+    <!-- Rounded corners: Physical corner radius ~16.5mm at 450ppi
+         ~292px native. In dp at 480dpi: 292 * (160/480) 97dp.
+         Slightly conservative at 96dp for safe region calculation. -->
+    <dimen name="rounded_corner_radius">96.0dp</dimen>
+    <dimen name="rounded_corner_radius_top">96.0dp</dimen>
+    <dimen name="rounded_corner_radius_bottom">96.0dp</dimen>
+
+    <!-- Padding above the rounded corner for content -->
+    <dimen name="rounded_corner_content_padding">4.0dp</dimen>
+
+    <!-- Display is NOT circular (it is a rectangle with round corners) -->
+    <bool name="config_mainBuiltInDisplayIsRound">false</bool>
+
+    <!-- Camera: Sony IMX906 (50MP OIS) + IMX355 (8MP UW) -->
+    <!-- This device has a rear camera capable of HFR (120fps 4K) -->
+    <bool name="config_cameraHfr">true</bool>
+
+    <!-- Use the framework's UDFPS (Under-Display Fingerprint Sensor) support -->
+    <bool name="config_fingerprintSupportsGestures">true</bool>
+
+    <!-- This device supports gesture navigation by default -->
+    <bool name="config_swipe_up_gesture_setting_available">true</bool>
+
+    <!-- Navigation bar height when present -->
+    <dimen name="navigation_bar_height">48.0dp</dimen>
+
+    <!-- Battery capacity for the device -->
+    <integer name="config_battery_capacity_full">7800</integer>
+
+    <!-- Fast charging LED pulse device supports separate charging LED behavior -->
+    <bool name="config_chargingAlwaysOnDisplayEnabled">true</bool>
+
+    <!-- This device supports Wi-Fi Display (Miracast) -->
+    <bool name="config_enableWifiDisplay">true</bool>
+
+    <!-- Misc Hardware -->
+    <!-- X-axis linear motor haptics uses vibrator HAL -->
+    <bool name="config_hasVibrator">true</bool>
+
+    <!-- IR Blaster -->
+    <bool name="config_hasInfraRed">true</bool>
+
+    <!-- This device has a headless (no 3.5mm jack) USB-C only audio -->
+    <bool name="config_hasHearingAidFeature">false</bool>
+    <bool name="config_isHeadsetPluggedIn">false</bool>
+
+    <!-- Audio output over USB-C / BT — device has stereo speakers -->
+    <integer name="config_safe_media_volume_index">10</integer>
+
+    <!-- Thermal / Performance -->
+    <!-- Sustained performance mode supported (SM8750 thermal headroom) -->
+    <bool name="config_sustainedPerformanceModeSupported">true</bool>
+
+    <!-- Adaptive Refresh Rate (LTPO specific) -->
+    <!-- Supported refresh rates for mode switching -->
+    <integer-array name="config_displaySupportedRefreshRates">
+        <item>1</item>
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+        <item>90</item>
+        <item>120</item>
+        <item>144</item>
+        <item>165</item>
+    </integer-array>
+
+    <!-- Minimum refresh rate (LTPO can go as low as 1Hz) -->
+    <integer name="config_minRefreshRateSwitchingFrames">2</integer>
+
+</resources>
