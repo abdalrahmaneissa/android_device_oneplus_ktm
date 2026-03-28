@@ -20,8 +20,25 @@
     <integer name="config_alertSliderMiddlePosition">2</integer>
     <integer name="config_alertSliderBottomPosition">3</integer>
 
+    <!-- Display -->
     <!-- Aspect ratio for 2800x1272 display -->
     <bool name="config_haveHigherAspectRatioScreen">true</bool>
+
+    <!-- Supported LiveDisplay modes for this OLED panel -->
+    <!-- 0=Off, 1=Auto (not available on OLED), 2=Day, 4=Night, 8=Outdoor -->
+    <integer name="config_dayColorTemperature">6500</integer>
+    <integer name="config_nightColorTemperature">4000</integer>
+    <integer name="config_outdoorAmbientLux">12000</integer>
+    <integer name="config_outdoorAmbientLuxHysteresis">1500</integer>
+
+    <!-- OLED: disable Adaptive Backlight (handled by OLED panel controller) -->
+    <bool name="config_enableCABC">false</bool>
+
+    <!-- Color enhancement (SDR→Vivid mode) available via DisplayColorFeature HAL -->
+    <bool name="config_enableColorEnhancement">true</bool>
+
+    <!-- Auto outdoor mode supported via ambient light sensor -->
+    <bool name="config_enableAutomaticBrightness">true</bool>
 
     <!-- Advanced reboot options -->
     <string-array name="config_restartActionsList">
