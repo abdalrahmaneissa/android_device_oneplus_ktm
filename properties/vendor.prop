@@ -1,4 +1,4 @@
-# Copyright (C) 2024-2026 The LineageOS Project
+# Copyright (C) 2026 The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 #
 # Vendor partition properties for OnePlus Ace 6 (ktm).
@@ -36,13 +36,3 @@ ro.oplus.wifi.wsa=StbcMrc
 ro.oplus.wifi.ull.tx_bw20=true
 ro.oplus.wifi.llm.media_boost=true
 ro.oplus.wifi.p2p.wowlan.enable=true
-
-# SurfaceFlinger refresh-rate scheduler
-# These override sm8750-common defaults for the 165Hz OLED panel.
-# Common sets: set_idle_timer_ms=80, set_touch_timer_ms=0
-# KTM uses longer timers to prevent excessive mode switching on OLED.
-ro.surface_flinger.set_idle_timer_ms=250
-ro.surface_flinger.set_touch_timer_ms=200
-ro.surface_flinger.set_display_power_timer_ms=500
-ro.surface_flinger.use_content_detection_for_refresh_rate=true
-ro.surface_flinger.max_frame_buffer_acquired_buffers=3
