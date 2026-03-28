@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Gesture navigation enabled by default (matches ColorOS stock behavior) -->
+    <integer name="def_navigation_mode">2</integer>
+
+    <!-- Brightness auto-adjustment enabled by default -->
+    <integer name="def_screen_brightness_mode">1</integer>
+
+    <!-- Default screen brightness: ~40% maps to ~102/255 for OLED safety -->
+    <integer name="def_screen_brightness">102</integer>
+
+    <!-- Screen timeout: 60s default -->
+    <integer name="def_screen_off_timeout">60000</integer>
+
+    <!-- Adaptive battery enabled -->
+    <integer name="def_adaptive_battery_management_enabled">1</integer>
+
+    <!-- Notification LED pulse (for AOD) -->
+    <integer name="def_notification_pulse">1</integer>
+
+    <!-- NFC enabled by default -->
+    <integer name="def_nfc_on">1</integer>
+
+</resources>
