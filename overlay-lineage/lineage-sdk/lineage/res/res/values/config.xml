@@ -40,6 +40,14 @@
     <!-- Auto outdoor mode supported via ambient light sensor -->
     <bool name="config_enableAutomaticBrightness">true</bool>
 
+    <!-- Trust Interface -->
+    <!-- Keys in the trust interface: Power key + Volume keys -->
+    <string-array name="config_trustKeyguardKeys">
+        <item>26</item>  <!-- KEYCODE_POWER -->
+        <item>24</item>  <!-- KEYCODE_VOLUME_UP -->
+        <item>25</item>  <!-- KEYCODE_VOLUME_DOWN -->
+    </string-array>
+
     <!-- Advanced reboot options -->
     <string-array name="config_restartActionsList">
         <item>restart</item>
