@@ -13,7 +13,7 @@
 
     <!-- Default peak refresh rate - device supports 165Hz -->
     <integer name="config_defaultPeakRefreshRate">165</integer>
-    <integer name="config_defaultRefreshRate">60</integer>
+    <integer name="config_defaultRefreshRate">120</integer>
 
     <!-- Enable config_dozeAlwaysOnDisplayAvailable as hardware supports AOD -->
     <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
@@ -32,4 +32,8 @@
 
     <!-- WFC over IMS available (carrier-provisioned) -->
     <bool name="config_carrier_wfc_ims_available">true</bool>
+
+    <!-- High-luminance mode supported for outdoor readability (HBM via
+    HighBrightnessMode controller, max ~800 nits per displayconfig) -->
+    <bool name="config_highBrightnessEnabled">true</bool>
 </resources>
