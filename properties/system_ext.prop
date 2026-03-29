@@ -1,23 +1,17 @@
-# Copyright (C) 2024-2026 The LineageOS Project
+#
+# Copyright (C) 2026 The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 #
-# system_ext partition properties for OnePlus Ace 6 (ktm).
+# KTM-ONLY system_ext props.
+# common/system_ext.prop already sets: horae, ims ovr flags,
+# radio slots, netmgr, media, bluetooth, cne, gps, etc.
 #
 
-# Horae (system-level performance/thermal daemon)
-# Confirmed present: system_ext/bin/horae + system_ext/etc/horae/horae.conf
-persist.sys.horae.enable=1
-
-# IMS / VoLTE / VoWiFi
-# Force-enable IMS capability flags for CN region (OP6113L1/PLQ110).
-# These are needed because the stock ROM ships with vendor-level IMS
-# provisioning that LineageOS does not replicate.
-persist.dbg.volte_avail_ovr=1
-persist.dbg.vt_avail_ovr=1
-persist.dbg.wfc_avail_ovr=1
-
-# IMS RTP QXDM logging level (0=off in user build)
+# IMS RTP logging — intentionally OFF for user builds.
+# Overrides common/system_ext.prop's value of 15.
 persist.vendor.ims.rtp.enableqxdm=0
 
-# IFAA
+# IFAA — KTM-specific device model identifier for
+# the In-App Fingerprint Authentication Alliance service.
+# Unique per hardware variant.
 sys.oplus.ifaa.model=ONEPLUS-R24851
