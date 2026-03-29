@@ -30,6 +30,9 @@ PRODUCT_PACKAGES += \
 TARGET_SCREEN_HEIGHT := 2800
 TARGET_SCREEN_WIDTH := 1272
 
+# Shipping API level
+PRODUCT_SHIPPING_API_LEVEL := 36
+
 # Display
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/displayconfig/display_id_4630946916234099603.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946916234099603.xml \
