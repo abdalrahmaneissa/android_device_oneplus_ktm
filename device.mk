@@ -68,13 +68,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
-# IR Blaster
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
-
-PRODUCT_PACKAGES += \
-    android.hardware.ir-service.example
-
 # Inherit from the common OEM chipset
 $(call inherit-product, device/oneplus/sm8750-common/common.mk)
 
