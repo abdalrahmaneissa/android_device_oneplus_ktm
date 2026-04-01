@@ -68,6 +68,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# NFC
+PRODUCT_PACKAGES += \
+    android.hardware.nfc-service-tms \
+    vendor.oplus.hardware.nfc_aidl-service \
+    vendor.oplus.hardware.nfcExtns-service
+
 # Inherit from the common OEM chipset
 $(call inherit-product, device/oneplus/sm8750-common/common.mk)
 
